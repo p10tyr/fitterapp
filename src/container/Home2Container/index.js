@@ -1,7 +1,7 @@
 // @flow
 import * as React from "react";
 import { connect } from "react-redux";
-import TodayJobsPage from "../../stories/screens/TodayJobsPage";
+import Home2 from "../../stories/screens/Home2";
 import datas from "./data";
 import { fetchList } from "./actions";
 export interface Props {
@@ -10,12 +10,12 @@ export interface Props {
 	data: Object,
 }
 export interface State {}
-class TodayJobsPageContainer extends React.Component<Props, State> {
+class Home2Container extends React.Component<Props, State> {
 	componentDidMount() {
 		this.props.fetchList(datas);
 	}
 	render() {
-		return <Home navigation={this.props.navigation} list={this.props.data} />;
+		return <Home2 navigation={this.props.navigation} list={this.props.data} />;
 	}
 }
 
@@ -26,7 +26,7 @@ function bindAction(dispatch) {
 }
 
 const mapStateToProps = state => ({
-	data: state.homeReducer.list,
-	isLoading: state.homeReducer.isLoading,
+	data: state.home2Reducer.list,
+	isLoading: state.home2Reducer.isLoading,
 });
-export default connect(mapStateToProps, bindAction)(TodayJobsPageContainer);
+export default connect(mapStateToProps, bindAction)(Home2Container);

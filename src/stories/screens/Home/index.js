@@ -46,7 +46,7 @@ class Home extends React.Component<Props, State> {
                 key={i}
                 onPress={() =>
                   //this.props.navigation.navigate("BlankPage", {
-                    this.props.navigation.navigate("TodayJobPage", {
+                    this.props.navigation.navigate("Home2", {
                     name: { item }
                   })}
               >
