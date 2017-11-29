@@ -50,11 +50,15 @@ class LoginForm extends React.Component<Props, State> {
 	render() {
 		const form = (
 			<Form>
-				<Field name="email" component={this.renderInput} validate={[email, required]} />
+				<Field name="email" component={this.renderInput} 
+				// validate={[email, required]} />
+				 validate={[]} />
+				
 				<Field
 					name="password"
 					component={this.renderInput}
-					validate={[alphaNumeric, minLength8, maxLength15, required]}
+					// validate={[alphaNumeric, minLength8, maxLength15, required]}
+					validate={[]}
 				/>
 			</Form>
 		);
