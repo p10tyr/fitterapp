@@ -15,7 +15,19 @@ class Home2Container extends React.Component<Props, State> {
 		this.props.fetchList(datas);
 	}
 	render() {
-		return <Home2 navigation={this.props.navigation} list={this.props.data} />;
+		var customData = require('./testdata.json');
+		// return <Home2 navigation={this.props.navigation} list={customData.Jobs} />;
+		console.log(customData);
+		var elem1 = [];
+
+		customData.Jobs.forEach(function(element) {
+			elem1.push(element.Customer.Name);
+			//console.log(element);
+		});
+		
+		// return <Home2 navigation={this.props.navigation} list={this.props.data} />;
+		 return <Home2 navigation={this.props.navigation} list={elem1} />;
+		
 	}
 }
 

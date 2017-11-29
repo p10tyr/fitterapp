@@ -35,7 +35,7 @@ class Home2 extends React.Component<Props, State> {
             </Button>
           </Left>
           <Body>
-            <Title>Home2</Title>
+            <Title>Todays Jobs</Title>
           </Body>
           <Right />
         </Header>
