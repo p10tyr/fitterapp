@@ -14,7 +14,7 @@ import {
   ListItem
 } from "native-base";
 
-import styles from "./styles";
+//import styles from "./styles";
 export interface Props {
   navigation: any;
   list: any;
@@ -35,7 +35,7 @@ class TodayJobPage extends React.Component<Props, State> {
             </Button>
           </Left>
           <Body>
-            <Title>Home</Title>
+            <Title>Todays Jobs</Title>
           </Body>
           <Right />
         </Header>
@@ -45,7 +45,7 @@ class TodayJobPage extends React.Component<Props, State> {
               <ListItem
                 key={i}
                 onPress={() =>
-                  this.props.navigation.navigate("BlankPage", {
+                  this.props.navigation.navigate("TodayJobsPage", {
                     name: { item }
                   })}
               >
@@ -59,4 +59,4 @@ class TodayJobPage extends React.Component<Props, State> {
   }
 }
 
-export default Home;
+export default TodayJobPage;

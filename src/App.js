@@ -5,6 +5,7 @@ import { Root } from "native-base";
 import Login from "./container/LoginContainer";
 import Home from "./container/HomeContainer";
 import BlankPage from "./container/BlankPageContainer";
+import TodayJobsPage from "./container/TodayJobsPageContainer";
 import Sidebar from "./container/SidebarContainer";
 
 const Drawer = DrawerNavigator(
@@ -21,6 +22,7 @@ const App = StackNavigator(
 	{
 		Login: { screen: Login },
 		BlankPage: { screen: BlankPage },
+		TodayJobsPage: { screen: TodayJobsPage },		
 		Drawer: { screen: Drawer },
 	},
 	{
