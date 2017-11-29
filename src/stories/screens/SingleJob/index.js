@@ -20,7 +20,7 @@ export interface Props {
   list: any;
 }
 export interface State {}
-class Home2 extends React.Component<Props, State> {
+class SingleJob extends React.Component<Props, State> {
   render() {
     return (
       <Container style={styles.container}>
@@ -35,30 +35,32 @@ class Home2 extends React.Component<Props, State> {
             </Button>
           </Left>
           <Body>
-            <Title>Todays Jobs</Title>
+            <Title>#JOB NAME</Title>
           </Body>
           <Right />
         </Header>
         <Content>
-          <List>
-            {this.props.list.map((item, i) => (
-              <ListItem
-                key={i}
-                onPress={() =>
-                  //this.props.navigation.navigate("BlankPage", {
-                    this.props.navigation.navigate("SingleJob", {
-                    name: { item }
-                  })}
-              >
-                <Text>{item}</Text>
-              </ListItem>
-              
-            ))}
-          </List>
+          <Text>
+              {this.props.list.Customer.Name }
+          </Text>
+          <Text>
+              {this.props.list.Customer.EmailAddress }
+          </Text>
+          <Text>
+              {this.props.list.Customer.Postcode }
+          </Text>
+          <Text>
+              {this.props.list.Customer.LatLng }
+          </Text>
+          <Text>
+              {this.props.list.Customer.Address }
+          </Text>
+
+          
         </Content>
       </Container>
     );
   }
 }
 
-export default Home2;
+export default SingleJob;
