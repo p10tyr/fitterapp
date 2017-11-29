@@ -45,12 +45,14 @@ class Home extends React.Component<Props, State> {
               <ListItem
                 key={i}
                 onPress={() =>
-                  this.props.navigation.navigate("BlankPage", {
+                  //this.props.navigation.navigate("BlankPage", {
+                    this.props.navigation.navigate("TodayJobPage", {
                     name: { item }
                   })}
               >
                 <Text>{item}</Text>
               </ListItem>
+              
             ))}
           </List>
         </Content>
