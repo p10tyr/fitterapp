@@ -13,7 +13,8 @@ class Login extends React.Component<Props, State> {
 			<Container>
 				<Header style={{ height: 200 }}>
 					<Body style={{ alignItems: "center" }}>
-						<Icon name="flash" style={{ fontSize: 104 }} />
+						{ <Icon name="flash" style={{ fontSize: 104 }} /> }
+						{/* <Image style="{{width:300, height: 100}}" source={require('../../../../assets/TOTD Logo.jpg')} /> */}
 						<Title>Tyres On The Drive</Title>
 						<View padder>
 							<Text style={{ color: Platform.OS === "ios" ? "#000" : "#FFF" }}>
@@ -33,7 +34,7 @@ class Login extends React.Component<Props, State> {
 				<Footer style={{ backgroundColor: "#F8F8F8" }}>
 					<View style={{ alignItems: "center", opacity: 0.5, flexDirection: "row" }}>
 						<View padder>
-							<Text style={{ color: "#000" }}>Made by TOTD Dev Team</Text>
+							<Text style={{ color: "#000" }}>Made by 3 stooges</Text>
 						</View>
 					</View>
 				</Footer>
