@@ -11,16 +11,16 @@ class Login extends React.Component<Props, State> {
 	render() {
 		return (
 			<Container>
-				<Header style={{ height: 200 }}>
-					<Body style={{ alignItems: "center" }}>
-						{ <Icon name="flash" style={{ fontSize: 104 }} /> }
-						{/* <Image style="{{width:300, height: 100}}" source={require('../../../../assets/TOTD Logo.jpg')} /> */}
-						<Title>Tyres On The Drive</Title>
+				<Header style={{ height: 250, backgroundColor: "white"  }}>
+					<Body style={{ alignItems: "center"}}>
+					
+					<Image source={require('../../../../assets/TOTDLogo.jpg')} />
 						<View padder>
 							<Text style={{ color: Platform.OS === "ios" ? "#000" : "#FFF" }}>
-								Fitter Application
+								Technician Companion
 							</Text>
 						</View>
+
 					</Body>
 				</Header>
 				<Content>

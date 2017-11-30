@@ -1,5 +1,8 @@
 {
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 14080
+  "packagerPid": 13980,
+  "expoServerNgrokUrl": "https://jf-byq.ppumkin.fitterapp.exp.direct",
+  "packagerNgrokUrl": "https://packager.jf-byq.ppumkin.fitterapp.exp.direct",
+  "ngrokPid": 14212
 }

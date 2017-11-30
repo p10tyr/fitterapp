@@ -1,5 +1,13 @@
 {
   "expo": {
+	"name" : "Fitter App",
+	"icon" : "./assets/totdiconpin.jpg",
+	"version" : "1.0.0",
+	"slug" : "fitter-app-slug",
+	"android" : {
+		"package" : "com.threestooges.fitterapp"
+	},
+	
     "sdkVersion": "23.0.0",
     "slug": "React-Native-Seed",
     "loading": {

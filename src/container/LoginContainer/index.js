@@ -52,13 +52,16 @@ class LoginForm extends React.Component<Props, State> {
 			<Form>
 				<Field name="email" component={this.renderInput} 
 				// validate={[email, required]} />
-				 validate={[]} />
+				 validate={[]} 
+				 defaultValue="dave@tecnician.com"
+				 />
 				
 				<Field
 					name="password"
 					component={this.renderInput}
 					// validate={[alphaNumeric, minLength8, maxLength15, required]}
 					validate={[]}
+					
 				/>
 			</Form>
 		);
